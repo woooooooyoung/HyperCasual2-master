@@ -1,0 +1,118 @@
+{
+    "name": "PlayerInput",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "700b682c-a246-4c3c-aa3a-3b412f858012",
+            "actions": [
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "fbc42d78-a321-4109-8f47-ad2fac8ef8f1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e277a2b1-0f79-44cb-8efc-1d3c94c530a5",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "UI",
+            "id": "af1a57f7-9570-4b48-94ac-7ea15ad828b7",
+            "actions": [
+                {
+                    "name": "Play",
+                    "type": "Button",
+                    "id": "b664df5f-8be3-4ffd-9d0d-1499f4ded00f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "024c53c8-53dd-4046-9894-9d8fcd641085",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Play",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Player2",
+            "id": "62a36861-a0d2-4ed8-9454-1f0fcc575786",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "508dc960-a494-457b-97b1-fd954143e30e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3fc8b1ec-c187-4344-b861-6a6c2ef05e8b",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "New action map",
+            "id": "b924ea54-da65-4a75-9aa6-355b54f41f8c",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "82bccd24-3d6d-4c09-8769-6e52b82854c5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1c0da1dc-6fe8-49e1-ab2a-d2c84036c177",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
