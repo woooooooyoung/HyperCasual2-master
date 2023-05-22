@@ -14,6 +14,8 @@ public class GameSceneFlow : MonoBehaviour
     private void Start()
     {
         Ready();
+        GameManager.Data.CurScore = 0;
+        // 시작하자마자 현재점수는 0
     }
 
     public void Ready()

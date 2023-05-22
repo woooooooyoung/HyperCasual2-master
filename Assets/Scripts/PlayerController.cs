@@ -12,7 +12,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float roteto;
     private Rigidbody2D rigidbody2d;
 
-    public UnityEvent Ondied; 
+    public UnityEvent OnJumpd;
+    public UnityEvent Ondied;
+    public UnityEvent OnScored;
 
     private void Awake()
     {
@@ -30,6 +32,8 @@ public class PlayerController : MonoBehaviour
         // 2D게임에선 Vector3가 아닌 Vector2를 써준다.
         // rigidbody2d.AddForce는 가속도에 힘을 더해주는 방식이라 아래로 떨어질때는 어느방향으로 힘주냐에 따라 더 빨라지거나 가속도를 늦출수 있다
         // rigidbody2d.velocity는 가속도 상관없이 힘을 주는 방향으로 바로간다. 속도상관없이 바로 감
+        OnJumpd?.Invoke();
+        // 점프를 했을 때 실행
 
     }
 
@@ -52,4 +56,11 @@ public class PlayerController : MonoBehaviour
         Ondied?.Invoke();
 
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        GameManager.Data.CurScore++;
+        OnScored?.Invoke();
+    }
+    // 플레이어가 트리거에 부딪히면 스코어를 얻음
 }
